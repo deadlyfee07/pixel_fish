@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html.dark {
+        color-scheme: dark;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    textarea,
+    select {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-weight: bold !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #6b7280 !important;
+        font-weight: normal !important;
+    }
+
+    select option {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-weight: bold !important;
+    }
+
+    select optgroup {
+        background-color: #1c2025 !important;
+        color: #97cbff !important;
+    }
+}
