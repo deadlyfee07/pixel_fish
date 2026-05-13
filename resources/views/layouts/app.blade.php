@@ -11,6 +11,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
+    <style>[x-cloak] { display: none !important; }</style>
 </head>
 <body class="bg-background text-on-surface font-body-md text-body-md min-h-screen flex flex-col">
     @auth
@@ -22,7 +23,7 @@
             @include('layouts.sidebar')
         @endauth
 
-        <main class="@auth flex-1 md:ml-64 p-margin-sm md:p-margin-lg bg-background w-full overflow-y-auto @endauth">
+        <main class="@auth flex-1 md:ml-64 px-4 py-6 md:p-margin-lg bg-background w-full overflow-y-auto @endauth">
             @yield('content')
         </main>
     </div>

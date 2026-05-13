@@ -3,10 +3,10 @@
 @section('title', 'PIXEL FISH - NEW LOG')
 
 @section('content')
-<div class="max-w-2xl mx-auto bg-surface-container border-4 border-black shadow-[12px_12px_0_0_#000] p-8 mt-8">
-    <header class="mb-8 border-b-4 border-black pb-4 flex items-center justify-between">
-        <h2 class="text-secondary font-headline-md uppercase flex items-center gap-2">
-            <span class="material-symbols-outlined">add_circle</span> CREATE NEW FISHING LOG
+<div class="max-w-2xl mx-auto bg-surface-container border-4 border-black shadow-[4px_4px_0_0_#000] md:shadow-[12px_12px_0_0_#000] p-4 md:p-8 mt-4 md:mt-8">
+    <header class="mb-6 md:mb-8 border-b-4 border-black pb-4 flex items-center justify-between">
+        <h2 class="text-secondary font-headline-md uppercase flex items-center gap-2 text-[14px] md:text-headline-md">
+            <span class="material-symbols-outlined text-[20px] md:text-[24px]">add_circle</span> CREATE NEW FISHING LOG
         </h2>
         <a href="{{ route('forum.index') }}" class="text-zinc-400 hover:text-white uppercase text-[10px] font-bold">Cancel</a>
     </header>

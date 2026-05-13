@@ -15,19 +15,19 @@
         <h2 class="font-headline-md text-headline-md uppercase font-bold">INGREDIENTS INDEX</h2>
     </div>
 
-    <div class="p-4 overflow-x-auto bg-[#121519]">
+    <div class="p-2 md:p-4 overflow-x-auto bg-[#121519]">
         <table class="w-full text-left font-body-md border-4 border-black border-collapse bg-surface">
-            <thead class="bg-black text-[#ff6b6b] uppercase text-[10px] tracking-widest">
+            <thead class="bg-black text-[#ff6b6b] uppercase text-[9px] md:text-[10px] tracking-widest">
                 <tr>
-                    <th class="p-4 border-b-4 border-r-4 border-black w-1/3">MATERIAL NAME</th>
-                    <th class="p-4 border-b-4 border-black w-2/3">DESCRIPTION / USE CASE</th>
+                    <th class="p-2 md:p-4 border-b-4 border-r-4 border-black w-1/3">MATERIAL NAME</th>
+                    <th class="p-2 md:p-4 border-b-4 border-black w-2/3">DESCRIPTION / USE CASE</th>
                 </tr>
             </thead>
-            <tbody class="text-[12px] font-bold uppercase">
+            <tbody class="text-[10px] md:text-[12px] font-bold uppercase">
                 @foreach($ingredients as $ingredient)
                 <tr class="border-b-4 border-black hover:bg-surface-container-high transition-colors">
-                    <td class="p-4 border-r-4 border-black text-[#ff6b6b] text-[14px]">{{ $ingredient->ingredient_name }}</td>
-                    <td class="p-4 border-black text-white leading-relaxed">{{ $ingredient->description }}</td>
+                    <td class="p-2 md:p-4 border-r-4 border-black text-[#ff6b6b] text-[11px] md:text-[14px] break-words">{{ $ingredient->ingredient_name }}</td>
+                    <td class="p-2 md:p-4 border-black text-white leading-relaxed break-words">{{ $ingredient->description }}</td>
                 </tr>
                 @endforeach
             </tbody>

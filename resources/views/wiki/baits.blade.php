@@ -15,21 +15,21 @@
         <h2 class="font-headline-md text-headline-md uppercase font-bold">BAIT & LURE GUIDE</h2>
     </div>
 
-    <div class="p-4 overflow-x-auto bg-[#121519]">
+    <div class="p-2 md:p-4 overflow-x-auto bg-[#121519]">
         <table class="w-full text-left font-body-md border-4 border-black border-collapse bg-surface">
-            <thead class="bg-black text-[#97cbff] uppercase text-[10px] tracking-widest">
+            <thead class="bg-black text-[#97cbff] uppercase text-[9px] md:text-[10px] tracking-widest">
                 <tr>
-                    <th class="p-4 border-b-4 border-r-4 border-black w-1/3">ITEM NAME</th>
-                    <th class="p-4 border-b-4 border-r-4 border-black w-1/3">MAIN TARGET</th>
-                    <th class="p-4 border-b-4 border-black w-1/3">BONUS TARGET</th>
+                    <th class="p-2 md:p-4 border-b-4 border-r-4 border-black w-1/3">ITEM NAME</th>
+                    <th class="p-2 md:p-4 border-b-4 border-r-4 border-black w-1/3">MAIN TARGET</th>
+                    <th class="p-2 md:p-4 border-b-4 border-black w-1/3">BONUS TARGET</th>
                 </tr>
             </thead>
-            <tbody class="text-[12px] font-bold uppercase">
+            <tbody class="text-[10px] md:text-[12px] font-bold uppercase">
                 @foreach($baits as $bait)
                 <tr class="border-b-4 border-black hover:bg-surface-container-high transition-colors">
-                    <td class="p-4 border-r-4 border-black text-[#97cbff] text-[14px]">{{ $bait->item_name }}</td>
-                    <td class="p-4 border-r-4 border-black text-white leading-relaxed">{{ $bait->main_target }}</td>
-                    <td class="p-4 border-black text-zinc-300 leading-relaxed">{{ $bait->bonus_target }}</td>
+                    <td class="p-2 md:p-4 border-r-4 border-black text-[#97cbff] text-[11px] md:text-[14px] break-words">{{ $bait->item_name }}</td>
+                    <td class="p-2 md:p-4 border-r-4 border-black text-white leading-relaxed break-words">{{ $bait->main_target }}</td>
+                    <td class="p-2 md:p-4 border-black text-zinc-300 leading-relaxed break-words">{{ $bait->bonus_target }}</td>
                 </tr>
                 @endforeach
             </tbody>

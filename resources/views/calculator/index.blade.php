@@ -3,14 +3,14 @@
 @section('title', 'PIXEL FISH - GEM CALCULATOR')
 
 @section('content')
-<header class="mb-margin-lg flex items-center gap-4">
-    <span class="material-symbols-outlined text-[48px] text-primary" data-icon="calculate" style="font-variation-settings: 'FILL' 1;">calculate</span>
-    <h1 class="font-headline-lg text-headline-lg text-primary uppercase drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">GEM CALCULATOR</h1>
+<header class="mb-margin-lg flex items-center gap-3 md:gap-4">
+    <span class="material-symbols-outlined text-[32px] md:text-[48px] text-primary" data-icon="calculate" style="font-variation-settings: 'FILL' 1;">calculate</span>
+    <h1 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary uppercase drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">GEM CALCULATOR</h1>
 </header>
 
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-8 lg:gap-12">
     <div class="lg:col-span-6 flex flex-col gap-margin-sm">
-        <div class="bg-surface-container border-[4px] border-black shadow-[8px_8px_0_0_#000] p-6 relative">
+        <div class="bg-surface-container border-[4px] border-black shadow-[4px_4px_0_0_#000] md:shadow-[8px_8px_0_0_#000] p-4 md:p-6 relative">
             <h2 class="font-headline-md text-headline-md text-secondary mb-6 uppercase flex items-center gap-2 border-b-4 border-black pb-2">
                 <span class="material-symbols-outlined" data-icon="add_circle">add_circle</span> INPUT CATCH
             </h2>
@@ -40,24 +40,24 @@
 
                 <div class="flex flex-col gap-2">
                     <label class="text-outline uppercase font-label-sm text-label-sm tracking-widest">SIZE CATEGORY</label>
-                    <div class="grid grid-cols-5 gap-2">
-                        <label class="cursor-pointer">
+                    <div class="flex gap-2 overflow-x-auto pb-2 -mx-2 px-2 snap-x">
+                        <label class="cursor-pointer flex-1 min-w-[60px] snap-start">
                             <input type="radio" name="fishSize" value="Tiny" class="peer hidden" />
                             <div class="border-[3px] border-black bg-surface text-on-surface p-2 text-center uppercase font-bold peer-checked:bg-primary peer-checked:text-black hover:bg-surface-container-high transition-colors text-[9px] md:text-[10px]">TINY</div>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 min-w-[60px] snap-start">
                             <input type="radio" name="fishSize" value="Small" class="peer hidden" />
                             <div class="border-[3px] border-black bg-surface text-on-surface p-2 text-center uppercase font-bold peer-checked:bg-primary peer-checked:text-black hover:bg-surface-container-high transition-colors text-[9px] md:text-[10px]">SMALL</div>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 min-w-[60px] snap-start">
                             <input type="radio" name="fishSize" value="Medium" class="peer hidden" checked />
                             <div class="border-[3px] border-black bg-surface text-on-surface p-2 text-center uppercase font-bold peer-checked:bg-primary peer-checked:text-black hover:bg-surface-container-high transition-colors text-[9px] md:text-[10px]">MED</div>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 min-w-[60px] snap-start">
                             <input type="radio" name="fishSize" value="Large" class="peer hidden" />
                             <div class="border-[3px] border-black bg-surface text-on-surface p-2 text-center uppercase font-bold peer-checked:bg-primary peer-checked:text-black hover:bg-surface-container-high transition-colors text-[9px] md:text-[10px]">LARGE</div>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 min-w-[60px] snap-start">
                             <input type="radio" name="fishSize" value="Huge" class="peer hidden" />
                             <div class="border-[3px] border-black bg-surface text-on-surface p-2 text-center uppercase font-bold peer-checked:bg-primary peer-checked:text-black hover:bg-surface-container-high transition-colors text-[9px] md:text-[10px]">HUGE</div>
                         </label>
@@ -69,15 +69,15 @@
                     <input id="fishQty" class="bg-white border-[4px] border-black p-3 text-black font-bold focus:border-primary w-full rounded-none text-center" type="number" min="1" value="1"/>
                 </div>
 
-                <button id="addBtn" type="button" class="mt-2 bg-secondary text-on-secondary font-headline-md text-headline-md border-[4px] border-black py-4 shadow-[4px_4px_0_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all uppercase flex justify-center items-center gap-2">
-                    <span class="material-symbols-outlined">add_shopping_cart</span> ADD TO HAUL
+                <button id="addBtn" type="button" class="mt-2 bg-secondary text-on-secondary font-headline-md text-headline-md border-[4px] border-black py-4 shadow-[4px_4px_0_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all uppercase flex justify-center items-center gap-2 text-[11px] md:text-headline-md">
+                    <span class="material-symbols-outlined text-[18px] md:text-[24px]">add_shopping_cart</span> ADD TO HAUL
                 </button>
             </div>
         </div>
     </div>
 
     <div class="lg:col-span-6 flex flex-col gap-margin-sm">
-        <div class="bg-[#121519] border-[4px] border-black p-6 h-full flex flex-col relative">
+        <div class="bg-[#121519] border-[4px] border-black p-4 md:p-6 h-full flex flex-col relative">
             <h2 class="font-headline-md text-headline-md text-tertiary mb-6 uppercase flex items-center gap-2">
                 <span class="material-symbols-outlined" data-icon="inventory">inventory_2</span> CURRENT HAUL
             </h2>
